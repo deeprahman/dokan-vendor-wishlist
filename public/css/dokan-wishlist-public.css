@@ -1,0 +1,47 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ 
+ .kas-wl-container {
+ 	float: right;
+ 
+ }
+ .kas_like_count{
+ 	float: left;
+ 	padding: 0 8px 0 8px;
+  	position: absolute;
+  	z-index: 3;
+  	font-size: 12px;
+  	right: -10px;
+  	top: -8px;
+  	color: red;
+    border-radius: 50%;
+    background: #ffffff;	
+ }
+ 
+ .heart {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background: url(../img/heart.png) no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  animation: fave-heart 1s steps(28);
+}
+.heart:hover {
+}
+.heart-active {
+  background-position: -2800px 0;
+  transition: background 1s steps(28);
+}
+
+@keyframes fave-heart {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2800px 0;
+  }
+}
